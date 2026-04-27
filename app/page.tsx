@@ -157,7 +157,7 @@ export default function Home() {
                 o bývaní
               </h2>
 
-              <p className="max-w-xl text-neutral-600 leading-8">
+              <p className="max-w-xl leading-8 text-neutral-600">
                 Už viac ako 16 rokov staviame domy, v ktorých sa ľuďom dobre
                 žije. Spájame kvalitné materiály, moderné technológie a poctivú
                 prácu. Od návrhu až po odovzdanie kľúčov.
@@ -305,7 +305,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 grid w-full grid-cols-1 lg:grid-cols-[35%_65%]">
+          <div className="mt-10 grid w-full grid-cols-1 lg:grid-cols-[1fr_1fr]">
             <div className="bg-[#081018] p-10 text-white md:p-14 lg:pl-[calc((100vw-1280px)/2+24px)]">
               <p className="mb-4 text-sm font-bold uppercase tracking-widest text-red-600">
                 Prečo si vybrať nás
@@ -333,7 +333,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex min-h-[260px] items-center bg-red-600 p-10 text-white md:p-14">
+            <div className="flex min-h-[260px] items-center bg-red-600 p-10 text-white md:p-14 lg:pr-[calc((100vw-1280px)/2+24px)]">
               <div>
                 <div className="mb-6 text-6xl">▣</div>
                 <h3 className="mb-4 text-4xl font-extrabold">
