@@ -1,6 +1,8 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="bg-black text-white">
+
+      {/* HERO */}
       <section className="relative min-h-screen overflow-hidden">
         <img
           src="/hero.jpg"
@@ -81,7 +83,7 @@ export default function Home() {
             <div className="rounded-md bg-black/55 p-8 shadow-2xl backdrop-blur-md">
               <div className="mb-8 text-4xl">⌂</div>
               <h3 className="text-lg font-bold">Projekty domov</h3>
-              <p className="mt-3 text-sm leading-6 text-white/75">
+              <p className="mt-3 text-sm text-white/75">
                 Vyberte si z našich projektov domov
               </p>
             </div>
@@ -89,7 +91,7 @@ export default function Home() {
             <div className="rounded-md bg-black/55 p-8 shadow-2xl backdrop-blur-md">
               <div className="mb-8 text-4xl">⌁</div>
               <h3 className="text-lg font-bold">Na kľúč</h3>
-              <p className="mt-3 text-sm leading-6 text-white/75">
+              <p className="mt-3 text-sm text-white/75">
                 Postavíme vám dom od základov
               </p>
             </div>
@@ -97,13 +99,83 @@ export default function Home() {
             <div className="rounded-md bg-black/55 p-8 shadow-2xl backdrop-blur-md">
               <div className="mb-8 text-4xl">▭</div>
               <h3 className="text-lg font-bold">Realizácie</h3>
-              <p className="mt-3 text-sm leading-6 text-white/75">
+              <p className="mt-3 text-sm text-white/75">
                 Pozrite si naše dokončené projekty
               </p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* O NÁS */}
+      <section className="bg-white px-6 py-24 text-black">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 lg:grid-cols-2">
+
+          {/* IMAGES */}
+          <div className="grid grid-cols-[2fr_0.8fr] gap-4">
+            <div className="relative overflow-hidden rounded-lg">
+              <img
+                src="/about-main.jpg"
+                className="h-full min-h-[520px] w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40" />
+
+              <div className="absolute inset-0 flex items-center justify-center text-white text-center">
+                <div>
+                  <div className="text-6xl font-bold">DPV</div>
+                  <div className="mt-3 text-2xl">DOM PRE VÁS</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid gap-4">
+              <img src="/about-1.jpg" className="rounded-lg object-cover" />
+              <img src="/about-2.jpg" className="rounded-lg object-cover" />
+              <img src="/about-3.jpg" className="rounded-lg object-cover" />
+            </div>
+          </div>
+
+          {/* TEXT */}
+          <div className="flex items-center">
+            <div>
+              <p className="mb-4 text-sm font-bold uppercase tracking-widest text-red-600">
+                O nás
+              </p>
+
+              <h2 className="mb-6 text-4xl font-extrabold leading-tight md:text-5xl">
+                Splníme váš sen
+                <br />
+                o bývaní
+              </h2>
+
+              <p className="text-neutral-600 leading-8 max-w-xl">
+                Už viac ako 16 rokov staviame domy, v ktorých sa ľuďom dobre žije.
+                Spájame kvalitné materiály, moderné technológie a poctivú prácu.
+                Od návrhu až po odovzdanie kľúčov.
+              </p>
+
+              <div className="mt-10 grid grid-cols-3 gap-5">
+                <div className="border p-6 rounded-lg">
+                  <p className="text-3xl font-bold">16+</p>
+                  <p className="text-sm text-neutral-500">rokov</p>
+                </div>
+
+                <div className="border p-6 rounded-lg">
+                  <p className="text-3xl font-bold">30+</p>
+                  <p className="text-sm text-neutral-500">tím</p>
+                </div>
+
+                <div className="border p-6 rounded-lg">
+                  <p className="text-3xl font-bold">350+</p>
+                  <p className="text-sm text-neutral-500">domov</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   );
 }
