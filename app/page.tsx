@@ -254,7 +254,7 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="relative min-h-[470px]">
+          <div className="relative min-h-[870px]">
             <img
               src="/services.jpg"
               alt="Interiér domu"
