@@ -313,7 +313,7 @@ export default function Home() {
 
             {/* RED CONSULTATION BOX */}
             <div className="flex min-h-[145px] items-center bg-red-600 px-10 py-8 text-white md:px-14 lg:w-[calc(100%+((100vw-1280px)/2))] lg:pr-[calc((100vw-1280px)/2+56px)]">
-              <div className="flex w-full items-center justify-between gap-10">
+              <div className="flex w-full flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
                 {/* RED BOX LEFT SIDE - ICON + TEXT */}
                 <div className="flex items-center gap-7">
                   <div className="text-5xl leading-none">📅</div>
@@ -330,11 +330,11 @@ export default function Home() {
 
                 {/* RED BOX RIGHT SIDE - BUTTON */}
                 <a
-                  href="#kontakt"
-                  className="inline-flex shrink-0 items-center justify-center border border-white/60 px-7 py-4 text-xs font-bold uppercase tracking-wide transition hover:bg-white hover:text-red-600"
-                >
-                  Objednať konzultáciu <span className="ml-4">→</span>
-                </a>
+  href="#kontakt"
+  className="inline-flex shrink-0 items-center justify-center border border-white/60 px-7 py-4 text-xs font-bold uppercase tracking-wide transition hover:bg-white hover:text-red-600 lg:ml-auto"
+>
+  Objednať konzultáciu <span className="ml-4">→</span>
+</a>
               </div>
             </div>
           </div>
