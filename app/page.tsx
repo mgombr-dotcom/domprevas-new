@@ -333,19 +333,24 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex min-h-[260px] items-center bg-red-600 p-10 text-white md:p-14 lg:w-[calc(100%+((100vw-1280px)/2))] lg:pr-[calc((100vw-1280px)/2+56px)]">
-              <div>
-                <div className="mb-6 text-6xl">▣</div>
-                <h3 className="mb-4 text-4xl font-extrabold">
-                  Začnime stavať váš vysnívaný domov
-                </h3>
-                <p className="mb-8 text-white/85">
-                  Nezáväzná konzultácia a cenová ponuka zdarma.
-                </p>
+            <div className="flex min-h-[160px] items-center bg-red-600 px-10 py-8 text-white md:px-14 lg:w-[calc(100%+((100vw-1280px)/2))] lg:pr-[calc((100vw-1280px)/2+56px)]">
+              <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+                <div className="flex items-center gap-7">
+                  <div className="text-5xl leading-none">📅</div>
+
+                  <div>
+                    <h3 className="text-2xl font-extrabold leading-tight md:text-3xl">
+                      Začnime stavať váš vysnívaný domov
+                    </h3>
+                    <p className="mt-3 text-sm text-white/90">
+                      Nezáväzná konzultácia a cenová ponuka zdarma.
+                    </p>
+                  </div>
+                </div>
 
                 <a
                   href="#kontakt"
-                  className="inline-flex border border-white/60 px-7 py-4 text-xs font-bold uppercase tracking-wide transition hover:bg-white hover:text-red-600"
+                  className="inline-flex shrink-0 items-center justify-center border border-white/60 px-7 py-4 text-xs font-bold uppercase tracking-wide transition hover:bg-white hover:text-red-600"
                 >
                   Objednať konzultáciu <span className="ml-4">→</span>
                 </a>
