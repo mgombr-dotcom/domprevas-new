@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="bg-black text-white">
-      {/* HERO */}
+      {/* ================= HERO SECTION ================= */}
       <section className="relative min-h-screen overflow-hidden">
         <img
           src="/hero.jpg"
@@ -9,9 +9,11 @@ export default function Home() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
+        {/* HERO OVERLAY */}
         <div className="absolute inset-0 bg-black/45" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/35 to-black/10" />
 
+        {/* HEADER / NAVIGATION */}
         <header className="relative z-20 mx-auto flex max-w-7xl items-center justify-between px-6 py-8">
           <div>
             <div className="text-3xl font-bold tracking-wide">DOM PRE VÁS</div>
@@ -40,6 +42,7 @@ export default function Home() {
           </div>
         </header>
 
+        {/* HERO TEXT */}
         <div className="relative z-10 mx-auto flex min-h-[calc(100vh-120px)] max-w-7xl items-center px-6">
           <div className="max-w-2xl pb-28">
             <h1 className="text-5xl font-extrabold leading-tight md:text-7xl">
@@ -77,6 +80,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* HERO SERVICE CARDS */}
         <div className="absolute bottom-8 left-0 right-0 z-20">
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-5 px-6 md:grid-cols-3 lg:ml-auto lg:mr-24">
             <div className="rounded-md bg-black/55 p-8 shadow-2xl backdrop-blur-md">
@@ -106,9 +110,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O NÁS */}
+      {/* ================= O NÁS SECTION ================= */}
       <section id="onas" className="bg-white px-6 py-24 text-black">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 lg:grid-cols-2">
+          {/* ABOUT IMAGES */}
           <div className="grid grid-cols-[2fr_0.8fr] gap-4">
             <div className="relative overflow-hidden rounded-lg">
               <img
@@ -127,24 +132,13 @@ export default function Home() {
             </div>
 
             <div className="grid gap-4">
-              <img
-                src="/about-1.jpg"
-                alt="Interiér"
-                className="h-full rounded-lg object-cover"
-              />
-              <img
-                src="/about-2.jpg"
-                alt="Kuchyňa"
-                className="h-full rounded-lg object-cover"
-              />
-              <img
-                src="/about-3.jpg"
-                alt="Kúpeľňa"
-                className="h-full rounded-lg object-cover"
-              />
+              <img src="/about-1.jpg" alt="Interiér" className="h-full rounded-lg object-cover" />
+              <img src="/about-2.jpg" alt="Kuchyňa" className="h-full rounded-lg object-cover" />
+              <img src="/about-3.jpg" alt="Kúpeľňa" className="h-full rounded-lg object-cover" />
             </div>
           </div>
 
+          {/* ABOUT TEXT */}
           <div className="flex items-center">
             <div>
               <p className="mb-4 text-sm font-bold uppercase tracking-widest text-red-600">
@@ -163,6 +157,7 @@ export default function Home() {
                 prácu. Od návrhu až po odovzdanie kľúčov.
               </p>
 
+              {/* ABOUT STATS */}
               <div className="mt-10 grid grid-cols-3 gap-5">
                 <div className="rounded-lg border p-6">
                   <p className="text-3xl font-bold">16+</p>
@@ -184,9 +179,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJEKTY DOMOV */}
+      {/* ================= PROJEKTY DOMOV SECTION ================= */}
       <section id="projekty" className="bg-[#081018] px-6 py-24 text-white">
         <div className="mx-auto max-w-7xl">
+          {/* PROJECTS HEADER */}
           <div className="mb-10 flex items-end justify-between gap-6">
             <div>
               <p className="mb-3 text-sm font-bold uppercase tracking-widest text-red-600">
@@ -205,6 +201,7 @@ export default function Home() {
             </a>
           </div>
 
+          {/* PROJECT CARDS */}
           <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-5">
             {[
               ["/project-1.jpg", "Rodinný dom 1", "104 m²"],
@@ -217,11 +214,7 @@ export default function Home() {
                 key={title}
                 className="overflow-hidden rounded-md bg-white text-black shadow-xl"
               >
-                <img
-                  src={image}
-                  alt={title}
-                  className="h-48 w-full object-cover"
-                />
+                <img src={image} alt={title} className="h-48 w-full object-cover" />
 
                 <div className="p-5">
                   <h3 className="font-bold">{title}</h3>
@@ -239,8 +232,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SLUŽBY */}
+      {/* ================= SLUŽBY SECTION ================= */}
       <section id="sluzby" className="relative bg-white text-black">
+        {/* SERVICES TOP TEXT + BACKGROUND IMAGE */}
         <div className="grid min-h-[720px] grid-cols-1 lg:grid-cols-2">
           <div className="px-6 py-24 lg:pl-[calc((100vw-1280px)/2+24px)] lg:pr-20">
             <p className="mb-4 text-sm font-bold uppercase tracking-widest text-red-600">
@@ -263,35 +257,17 @@ export default function Home() {
           </div>
         </div>
 
+        {/* SERVICES FLOATING CONTENT */}
         <div className="relative z-20 -mt-[500px] lg:-mt-[520px]">
+          {/* SERVICE CARDS */}
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid overflow-hidden rounded-md bg-white shadow-2xl md:grid-cols-5">
               {[
-                [
-                  "⌁",
-                  "Návrh a projekcia",
-                  "Vytvoríme projekt presne podľa vašich predstáv.",
-                ],
-                [
-                  "▦",
-                  "Výstavba na kľúč",
-                  "Postavíme váš dom kvalitne, načas a bez starostí.",
-                ],
-                [
-                  "▱",
-                  "Interiérové riešenia",
-                  "Pomôžeme s výberom materiálov a zariadením.",
-                ],
-                [
-                  "▣",
-                  "Stavebný dozor",
-                  "Zabezpečíme kontrolu kvality počas celej výstavby.",
-                ],
-                [
-                  "⚒",
-                  "Záručný a pozáručný servis",
-                  "Sme tu pre vás aj po odovzdaní domu.",
-                ],
+                ["⌁", "Návrh a projekcia", "Vytvoríme projekt presne podľa vašich predstáv."],
+                ["▦", "Výstavba na kľúč", "Postavíme váš dom kvalitne, načas a bez starostí."],
+                ["▱", "Interiérové riešenia", "Pomôžeme s výberom materiálov a zariadením."],
+                ["▣", "Stavebný dozor", "Zabezpečíme kontrolu kvality počas celej výstavby."],
+                ["⚒", "Záručný a pozáručný servis", "Sme tu pre vás aj po odovzdaní domu."],
               ].map(([icon, title, text]) => (
                 <div
                   key={title}
@@ -305,7 +281,9 @@ export default function Home() {
             </div>
           </div>
 
+          {/* WHY US + RED CONSULTATION BANNER */}
           <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 px-6 lg:grid-cols-2 lg:pr-0">
+            {/* DARK WHY US BOX */}
             <div className="bg-[#081018] p-10 text-white md:p-14">
               <p className="mb-4 text-sm font-bold uppercase tracking-widest text-red-600">
                 Prečo si vybrať nás
@@ -333,8 +311,10 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex min-h-[160px] items-center bg-red-600 px-10 py-8 text-white md:px-14 lg:w-[calc(100%+((100vw-1280px)/2))] lg:pr-[calc((100vw-1280px)/2+56px)]">
-              <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+            {/* RED CONSULTATION BOX */}
+            <div className="flex min-h-[145px] items-center bg-red-600 px-10 py-8 text-white md:px-14 lg:w-[calc(100%+((100vw-1280px)/2))] lg:pr-[calc((100vw-1280px)/2+56px)]">
+              <div className="flex w-full items-center justify-between gap-10">
+                {/* RED BOX LEFT SIDE - ICON + TEXT */}
                 <div className="flex items-center gap-7">
                   <div className="text-5xl leading-none">📅</div>
 
@@ -342,12 +322,13 @@ export default function Home() {
                     <h3 className="text-2xl font-extrabold leading-tight md:text-3xl">
                       Začnime stavať váš vysnívaný domov
                     </h3>
-                    <p className="mt-3 text-sm text-white/90">
+                    <p className="mt-2 text-sm text-white/90">
                       Nezáväzná konzultácia a cenová ponuka zdarma.
                     </p>
                   </div>
                 </div>
 
+                {/* RED BOX RIGHT SIDE - BUTTON */}
                 <a
                   href="#kontakt"
                   className="inline-flex shrink-0 items-center justify-center border border-white/60 px-7 py-4 text-xs font-bold uppercase tracking-wide transition hover:bg-white hover:text-red-600"
@@ -359,6 +340,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* SECTION BOTTOM SPACE */}
         <div className="h-24" />
       </section>
     </main>
