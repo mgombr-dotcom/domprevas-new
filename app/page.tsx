@@ -305,8 +305,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 px-6 lg:grid-cols-[1fr_calc((100vw-1280px)/2+640px)] lg:pr-0">
-            <div className="bg-[#081018] p-10 text-white md:p-14">
+          <div className="mt-10 grid w-full grid-cols-1 lg:grid-cols-[35%_65%]">
+            <div className="bg-[#081018] p-10 text-white md:p-14 lg:pl-[calc((100vw-1280px)/2+24px)]">
               <p className="mb-4 text-sm font-bold uppercase tracking-widest text-red-600">
                 Prečo si vybrať nás
               </p>
