@@ -305,8 +305,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 grid w-screen grid-cols-1 lg:ml-[calc(50%-50vw)] lg:grid-cols-[calc((100vw-1280px)/2+640px)_1fr]">
-            <div className="bg-[#081018] p-10 text-white md:p-14 lg:pl-[calc((100vw-1280px)/2+24px)]">
+          <div className="mx-auto mt-10 grid max-w-7xl grid-cols-1 px-6 lg:grid-cols-2 lg:pr-0">
+            <div className="bg-[#081018] p-10 text-white md:p-14">
               <p className="mb-4 text-sm font-bold uppercase tracking-widest text-red-600">
                 Prečo si vybrať nás
               </p>
@@ -333,7 +333,7 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="flex min-h-[260px] items-center bg-red-600 p-10 text-white md:p-14 lg:pr-[calc((100vw-1280px)/2+24px)]">
+            <div className="flex min-h-[260px] items-center bg-red-600 p-10 text-white md:p-14 lg:w-[calc(100%+((100vw-1280px)/2))] lg:pr-[calc((100vw-1280px)/2+56px)]">
               <div>
                 <div className="mb-6 text-6xl">▣</div>
                 <h3 className="mb-4 text-4xl font-extrabold">
