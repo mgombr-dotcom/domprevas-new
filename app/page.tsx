@@ -305,7 +305,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 grid w-full grid-cols-1 lg:grid-cols-[calc((100vw-1280px)/2+640px)_1fr]">
+          <div className="mt-10 grid w-screen grid-cols-1 lg:ml-[calc(50%-50vw)] lg:grid-cols-[calc((100vw-1280px)/2+640px)_1fr]">
             <div className="bg-[#081018] p-10 text-white md:p-14 lg:pl-[calc((100vw-1280px)/2+24px)]">
               <p className="mb-4 text-sm font-bold uppercase tracking-widest text-red-600">
                 Prečo si vybrať nás
