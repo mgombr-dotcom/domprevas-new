@@ -176,6 +176,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PROJEKTY DOMOV */}
+<section id="projekty" className="bg-[#081018] px-6 py-24 text-white">
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-10 flex items-end justify-between gap-6">
+      <div>
+        <p className="mb-3 text-sm font-bold uppercase tracking-widest text-red-600">
+          Projekty domov
+        </p>
+        <h2 className="text-4xl font-extrabold md:text-5xl">
+          Vyberte si dom podľa svojich predstáv
+        </h2>
+      </div>
+
+      <a
+        href="#"
+        className="hidden border border-white/40 px-7 py-4 text-xs font-bold uppercase tracking-wide transition hover:bg-white hover:text-black md:inline-flex"
+      >
+        Zobraziť všetky projekty <span className="ml-4">→</span>
+      </a>
+    </div>
+
+    <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-5">
+      {[
+        ["/project-1.jpg", "Rodinný dom 1", "104 m²"],
+        ["/project-2.jpg", "Rodinný dom 2", "108 m²"],
+        ["/project-3.jpg", "Rodinný dom 3", "112 m²"],
+        ["/project-4.jpg", "Rodinný dom 4", "116 m²"],
+        ["/project-5.jpg", "Rodinný dom 5", "120 m²"],
+      ].map(([image, title, size]) => (
+        <div
+          key={title}
+          className="overflow-hidden rounded-md bg-white text-black shadow-xl"
+        >
+          <img
+            src={image}
+            alt={title}
+            className="h-48 w-full object-cover"
+          />
+
+          <div className="p-5">
+            <h3 className="font-bold">{title}</h3>
+            <p className="mt-1 text-sm text-neutral-600">{size}</p>
+
+            <div className="mt-5 flex items-center gap-5 text-sm text-neutral-700">
+              <span>🚗 4</span>
+              <span>🛏 2</span>
+              <span>🛁 1</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
     </main>
   );
 }
